@@ -1,12 +1,12 @@
 # PasscodeLock
-A Swift implementation of passcode lock for iOS with TouchID authentication.
+A Swift 3.0 implementation of passcode lock for iOS with TouchID authentication.
 
 Originally created by [@yankodimitrov](https://github.com/yankodimitrov/SwiftPasscodeLock), hope you're doing well.
 
 <img src="https://raw.githubusercontent.com/yankodimitrov/SwiftPasscodeLock/master/passcode-lock.gif" height="386">
 
 ## Installation
-PasscodeLock requires Swift 2.0 and Xcode 7
+PasscodeLock requires Swift 3.0 and Xcode 8
 
 ### [CocoaPods](http://cocoapods.org/)
 
@@ -16,9 +16,9 @@ To integrate PasscodeLock into your Xcode project using CocoaPods, specify it in
 
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '8.0'
+platform :ios, '9.0'
 
-pod 'PasscodeLock', '~> 1.0.2'
+pod 'PasscodeLock', :git => 'https://github.com/minikin/SwiftPasscodeLock'
 ```
 
 Then, run the following command:
@@ -27,12 +27,6 @@ Then, run the following command:
 $ pod install
 ```
 
-### [Carthage](https://github.com/Carthage/Carthage)
-
-Add the following line to your [Cartfile](https://github.com/carthage/carthage)
-```swift
-github "velikanov/SwiftPasscodeLock"
-```
 ## Usage
 
 - Create an implementation of the `PasscodeRepositoryType` protocol.
@@ -113,4 +107,4 @@ Take a look at `PasscodeLock/en.lproj/PasscodeLock.strings` for the localization
 
 ## Demo App
 
-The demo app comes with a simple implementation of the `PasscodeRepositoryType` protocol that is using the **NSUserDefaults** to store and retrieve the passcode. In your real applications you will probably want to use the **Keychain API**. Keep in mind that the **Keychain** records will not be removed when your user deletes your app.
+I'll add it soon.
